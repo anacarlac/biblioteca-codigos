@@ -1,36 +1,36 @@
-# Carregar pacotes
+# Load packages
 library(usethis)
 
-# Legenda Git
-## Commit: qual pasta será enviada
-## Push: realizar o upload
-## Pull: "puxar" as atualizações feitas por outras pessoas
+# Firstly, make sure you are starting this tutorial with a R project created already!
 
-# Configurar o git com dados da conta 
-usethis::use_git_config(user.name = "Ana Crispim", # Seu nome
-                        user.email = "anacarlacrispim@gmail.com") # Seu email
+# Git labels
+## Commit: which file will be uploaded 
+## Push: push/upload select file 
+## Pull: pull/retrieve updates 
 
-# Configurar o git com o R studio
+# Set up your git account  
+usethis::use_git_config(user.name = "XXX", # Insert your name
+                        user.email = "XXX@XXX.com") # Insert your e-mail
+
+# Set up git and R studio 
 usethis::create_github_token()
 
-# Adicionar o token gerado no .Renviron e salvar arquivo: GITHUB_PAT= = COPIAR+COLAR_TOKEN
+# Add generated token into the .Renviron file and save the file: GITHUB_PAT= COPY+PASTE-YOUR-TOKEN 
 usethis::edit_r_environ()
 
-# Reinicie a sessão
+# Restart the session
 
-# Teste com Hackaton 2023 (Answers: Yes; Yes)
+# Test (Answers: Yes; Yes)
 usethis::use_git()
 
-# Conectando o projeto com GI
+# Connect your new project with GIT 
 usethis::use_github()
 
-# será perguntado qual é a opção de escolha: ssh ou https
-2 # ou https protocol
+# Choose the protocol: usually it is https protocol
 
-# então irá perguntar sobre a criação do pacote no repositório
-3 = yup
+# Then agree to create a repository with your R project: usually choose the 'yes' option 
 
-# all good! XXX
+# all good, now your project was uploaded to git! 
 
 
 
